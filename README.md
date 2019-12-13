@@ -30,7 +30,7 @@ optional arguments:
 
 After get the checkpoint (actually, we include one in the current repo), we can run the following code to get top-1 eigenvalue, the trace, as well as the density estimation:
 ```
-export CUDA_VISIBLE_DEVICES=0; python example_pyhessian_analysis.py [--batch-size] [--hessian-batch-size] [--seed] [--batch-norm] [--residual] [--cuda] [--resume]
+export CUDA_VISIBLE_DEVICES=0; python example_pyhessian_analysis.py [--mini-hessian-batch-size] [--hessian-batch-size] [--seed] [--batch-norm] [--residual] [--cuda] [--resume]
 
 optional arguments:
 --mini-hessian-batch-size   mini hessian batch size (default: 200)
