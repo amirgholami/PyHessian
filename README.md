@@ -39,10 +39,10 @@ optional arguments:
 --batch-norm                do we need batch norm in ResNet or not (default: True)
 --residual                  do we need residual connection or not (default: True)
 --cuda                      do we use gpu or not (default: True)
---resume                    resume path of the checkpoint (default: none, much be filled by user)
+--resume                    resume path of the checkpoint (default: none, must be filled by user)
 ```
 
-The results are saved in result.txt file. 
+The output density plot is saved as example.pdf 
 
 ## Citation
 PyHessian has been developed as part of the following paper. We appreciate it if you would please cite the following paper if you found the library useful for your work:
