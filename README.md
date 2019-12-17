@@ -1,4 +1,6 @@
 # PyHessian
+![Block](misc/resnet38.png)
+
 
 ## Introduction
 PyHessian is a pytorch library for Hessian based analysis of neural network models. The library supports computation of (i) top Hessian eigenvlaues, (ii) the trace of the Hessian matrix, and (iii) the full Hessian Eigenvalues Spetral Density (ESD). For details please see [this paper](https://arxiv.org/pdf/1912.07145.pdf).
