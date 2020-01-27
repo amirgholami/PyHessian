@@ -114,7 +114,7 @@ criterion = nn.CrossEntropyLoss()  # label loss
 # Get model checkpoint, get saving folder
 ###################
 if args.resume == '':
-    raise ("please choose the trained model")
+    raise Exception("please choose the trained model")
 model.load_state_dict(torch.load(args.resume))
 
 ######################################################
