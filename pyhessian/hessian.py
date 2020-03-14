@@ -83,7 +83,7 @@ class hessian():
         device = self.device
         num_data = 0  # count the number of datum points in the dataloader
 
-        THv = [torch.randn(p.size()).to(device) for p in self.params
+        THv = [torch.zeros(p.size()).to(device) for p in self.params
               ]  # accumulate result
         for inputs, targets in self.data:
             self.model.zero_grad()
