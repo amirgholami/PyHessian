@@ -1,5 +1,6 @@
 ![Block](misc/pyhessian-01.png)
 
+![Block](misc/hessian.png)
 
 ## Introduction
 PyHessian is a pytorch library for Hessian based analysis of neural network models. The library enables computing the following metrics:
@@ -11,7 +12,12 @@ PyHessian is a pytorch library for Hessian based analysis of neural network mode
 
 For details please see [this paper](https://arxiv.org/pdf/1912.07145.pdf).
 
-![Block](misc/hessian.png)
+
+## Publication List
+This project was supported through NSF funding and we are interested in documenting related publications
+written on or with the help of PyHessian. This will allows us to continue developing the library,
+and will also be a good summary for related and on going work on second order methods. [You can see the current list here](publication_list.md).
+Please contact us if you have a related paper and we would be glad to add it to the list.
 
 
 ## Usage
@@ -54,6 +60,7 @@ optional arguments:
 ```
 
 The output density plot is saved as example.pdf 
+
 
 ## Citation
 PyHessian has been developed as part of the following paper. We appreciate it if you would please cite the following paper if you found the library useful for your work:
