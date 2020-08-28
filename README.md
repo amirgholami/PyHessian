@@ -13,7 +13,7 @@ PyHessian is a pytorch library for Hessian based analysis of neural network mode
 For more details please see:
 
 - [The Hessian tutorial notebook](./Hessian_Tutorial.ipynb)
-- [Video explanation of tutorial](https://www.youtube.com/watch?v=S87ancnZ0MM&feature=youtu.be&t=43:20)
+- [Video explanation of tutorial](https://www.youtube.com/watch?v=S87ancnZ0MM&feature=youtu.be&t=43m20s)
 - [The PyHessian paper](https://arxiv.org/pdf/1912.07145.pdf).
 
 
