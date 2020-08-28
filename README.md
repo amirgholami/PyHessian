@@ -10,7 +10,11 @@ PyHessian is a pytorch library for Hessian based analysis of neural network mode
 - The full Hessian Eigenvalues Spectral Density (ESD)
 
 
-For details please see [this paper](https://arxiv.org/pdf/1912.07145.pdf).
+For more details please see:
+
+- [The Hessian tutorial notebook](./Hessian_Tutorial.ipynb)
+- [Video explanation of tutorial](https://www.youtube.com/watch?v=S87ancnZ0MM&feature=youtu.be&t=43:20)
+- [The PyHessian paper](https://arxiv.org/pdf/1912.07145.pdf).
 
 
 ## Publication List
