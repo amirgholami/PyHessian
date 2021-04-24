@@ -25,9 +25,17 @@ Please contact us if you have a related paper and we would be glad to add it to 
 
 
 ## Usage
-Please first clone the PyHessian library to your local system:
+### Install from Pip
+You can install the library from pip
+```
+pip install pyhessian
+```
+
+### Install from source
+You can also compile the library from source
 ```
 git clone https://github.com/amirgholami/PyHessian.git
+python setup.py install
 ```
 
 Before running the Hessian code, we need a (pre-trained) NN model. Here, we provide a training file to train ResNet20 model on Cifar-10 dataset:
