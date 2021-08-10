@@ -183,7 +183,7 @@ class hessian():
             else:
                 Hv = hessian_vector_product(self.gradsH, self.params, v)
             trace_vhv.append(group_product(Hv, v).cpu().item())
-            if abs(np.mean(trace_vhv) - trace) / (trace + 1e-6) < tol:
+            if abs(np.mean(trace_vhv) - trace) / (abs(trace) + 1e-6) < tol:
                 return trace_vhv
             else:
                 trace = np.mean(trace_vhv)
