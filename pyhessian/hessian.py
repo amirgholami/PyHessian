@@ -258,7 +258,7 @@ class hessian():
                 if i < len(alpha_list) - 1:
                     T[i + 1, i] = beta_list[i]
                     T[i, i + 1] = beta_list[i]
-            a_, b_ = torch.eig(T, eigenvectors=True)
+            a_, b_ = torch.linalg.eig(T)
 
             eigen_list = a_[:, 0]
             weight_list = b_[0, :]**2
