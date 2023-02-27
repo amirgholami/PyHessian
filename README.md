@@ -79,4 +79,6 @@ PyHessian has been developed as part of the following paper. We appreciate it if
 
 * Z. Yao, A. Gholami, K Keutzer, M. Mahoney. PyHessian:  Neural Networks Through the Lens of the Hessian, Spotlight at ICML workshop on Beyond First-Order Optimization Methods in Machine Learning, 2020 (also in proceedings of IEEE Conferenceon big data), [PDF](https://arxiv.org/pdf/1912.07145.pdf).
 
+## Copyright
 
+THIS SOFTWARE AND/OR DATA WAS DEPOSITED IN THE BAIR OPEN RESEARCH COMMONS REPOSITORY ON 02/27/23.
