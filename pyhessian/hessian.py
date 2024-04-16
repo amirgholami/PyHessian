@@ -34,7 +34,7 @@ class hessian():
         iii) the estimated eigenvalue density
     """
 
-    def __init__(self, model, criterion, data=None, dataloader=None, cuda=True):
+    def __init__(self, model, criterion, data=None, dataloader=None, weight_decay=None, cuda=True):
         """
         model: the model that needs Hessain information
         criterion: the loss function
@@ -74,7 +74,8 @@ class hessian():
             loss.backward(create_graph=True)
 
         # this step is used to extract the parameters from the model
-        params, gradsH = get_params_grad(self.model)
+        self.weight_decay = weight_decay
+        params, gradsH = get_params_grad(self.model, weight_decay=self.weight_decay)
         self.params = params
         self.gradsH = gradsH  # gradient used for Hessian computation
 
@@ -91,7 +92,7 @@ class hessian():
             outputs = self.model(inputs.to(device))
             loss = self.criterion(outputs, targets.to(device))
             loss.backward(create_graph=True)
-            params, gradsH = get_params_grad(self.model)
+            params, gradsH = get_params_grad(self.model, weight_decay=self.weight_decay)
             self.model.zero_grad()
             Hv = torch.autograd.grad(gradsH,
                                      params,
